@@ -31,7 +31,7 @@ contract DegenToken {
     }
 
     constructor() {
-        name = "Degen Gaming Token";
+        name = "Degen Game Token";
         symbol = "DEGEN";
         decimals = 18;
         totalSupply = 0;
