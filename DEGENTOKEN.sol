@@ -26,7 +26,7 @@ contract DegenToken {
     mapping(uint256 => NftItem) public nftItems;
 
     modifier onlyOwner() {
-        require(msg.sender == owner, "Only the owner can call this function.");
+        require(msg.sender == owner, "Owner is required.");
         _;
     }
 
@@ -99,7 +99,6 @@ contract DegenToken {
 
         return nftItems[itemId].name;
     }
-
     function addNftItem(uint256 itemId, string memory itemName, uint256 itemPrice) public onlyOwner {
         nftItems[itemId] = NftItem(itemName, itemPrice);
     }
