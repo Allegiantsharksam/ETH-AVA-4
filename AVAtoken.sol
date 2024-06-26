@@ -33,8 +33,8 @@ contract DegenGamingToken {
 
         _addGameStoreItem(0, "sticker", 500);
         _addGameStoreItem(1, "phone", 1000);
-        _addGameStoreItem(2, "laptop", 20000);
-        _addGameStoreItem(3, "servers", 25000);
+        _addGameStoreItem(2, "laptop", 1500);
+        _addGameStoreItem(3, "servers", 2500);
     }
 
     function _addGameStoreItem(uint256 itemId, string memory _itemName, uint256 _itemPrice) internal {
